@@ -1,0 +1,21 @@
+{
+    "name": "Fontfinder",
+    "id": "fontfinder-plugin",
+    "api": "1.0.0",
+    "main": "code.js",
+    "ui": "ui.html",
+    "editorType": ["figma"],
+    "description": "A Figma plugin that lists all the fonts used in a selected artboard.",
+    "menu": [
+      {
+        "name": "Run Fontfinder",
+        "command": "list-fonts"
+      }
+    ],
+    "icon": "https://your-username.github.io/fontfinder/icon.png",
+    "version": "1.0.0",
+    "author": "Your Name",
+    "keywords": ["fonts", "artboard", "design", "plugin","fontfinder", "findfont"]
+  }
+  
+  

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fontfinder</title>
+</head>
+<body>
+  <h2>Fonts used in this artboard:</h2>
+  <ul id="fontList"></ul>
+
+  <script>
+    window.onmessage = (event) => {
+      const fonts = event.data.pluginMessage;
+      const fontList = document.getElementById('fontList');
+      fontList.innerHTML = '';
+      fonts.forEach((font) => {
+        const listItem = document.createElement('li');
+        listItem.textContent = font;
+        fontList.appendChild(listItem);
+      });
+    };
+  </script>
+</body>
+</html>
